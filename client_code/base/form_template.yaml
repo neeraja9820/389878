@@ -7,6 +7,7 @@ components:
   properties: {}
   name: content_panel
   layout_properties: {slot: default}
+  components: []
 - type: FlowPanel
   properties: {}
   name: navbar_links
@@ -21,6 +22,7 @@ components:
     type: Label
     layout_properties: {}
 - name: title
-  properties: {text: Tech with Tin shop, icon: 'fa:500px'}
+  properties: {text: Tech with Tim shop, icon: 'fa:500px'}
   type: Label
   layout_properties: {slot: title}
+  data_bindings: []
