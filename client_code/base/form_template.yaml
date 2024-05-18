@@ -7,22 +7,18 @@ components:
   properties: {}
   name: content_panel
   layout_properties: {slot: default}
-  components: []
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
   components:
-  - name: my_courses
-    properties: {text: my courses, icon: 'fa:book'}
+  - name: label_3
+    properties: {}
     type: Label
-    layout_properties: {}
-  - name: sign_in
-    properties: {text: sign in, icon: 'fa:sign-in'}
+  - name: label_2
+    properties: {}
     type: Label
-    layout_properties: {}
-- name: title
-  properties: {text: Tech with Tim shop, icon: 'fa:500px'}
+- name: label_1
+  properties: {}
   type: Label
   layout_properties: {slot: title}
-  data_bindings: []
