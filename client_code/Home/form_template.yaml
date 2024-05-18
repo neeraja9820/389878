@@ -2,17 +2,23 @@ container:
   type: ColumnPanel
   properties: {foreground: '', background: '', role: text}
 components:
-- name: main_image
-  properties: {source: _/theme/Photo.jpg}
-  type: Image
-  layout_properties: {grid_position: 'TFVEIL,SGYBUA'}
-- name: label
-  properties: {text: 'This is the Tech with Tim course shop! enjoy:)', align: center,
-    font_size: 26}
-  type: TextBox
-  layout_properties: {grid_position: 'HWRLAT,TTZSLI'}
-- name: button_1
-  properties: {text: view courses, role: primary-color, icon: 'fa:arrow-right'}
-  type: Button
-  layout_properties: {grid_position: 'GXYJBB,WONUNQ'}
+- name: content_panel
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'TBINVC,CTDHRU'}
+  components:
+  - name: main_image
+    properties: {source: _/theme/Photo.jpg}
+    type: Image
+    layout_properties: {grid_position: 'OQOTIT,FOENVD'}
+  - name: label
+    properties: {text: 'This is the Tech with Tim course shop! enjoy:)', align: center,
+      font_size: 26, underline: false}
+    type: TextBox
+    layout_properties: {grid_position: 'VUGFSX,XFSSGB'}
+  - name: button_1
+    properties: {text: view_courses, role: primary-color, icon: 'fa:arrow-right'}
+    type: Button
+    layout_properties: {grid_position: 'TZRCAU,JEDXPX'}
+    event_bindings: {click: button_1_click}
 is_package: true
