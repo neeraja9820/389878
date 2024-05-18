@@ -1,0 +1,26 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {}
+  name: content_panel
+  layout_properties: {slot: default}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+  components:
+  - name: my_courses
+    properties: {text: my courses, icon: 'fa:book'}
+    type: Label
+    layout_properties: {}
+  - name: sign_in
+    properties: {text: sign in, icon: 'fa:sign-in'}
+    type: Label
+    layout_properties: {}
+- name: title
+  properties: {text: Tech with Tin shop, icon: 'fa:500px'}
+  type: Label
+  layout_properties: {slot: title}

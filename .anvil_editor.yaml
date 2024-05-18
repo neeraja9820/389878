@@ -1,9 +1,11 @@
 unique_ids:
   forms:
-    Form1: '1716014835336581079698737.206'
+    Home: '1716016099270734224466030.5394'
+    base: '1716015711138539042844158.52264'
   modules: {}
   server_modules: {}
   assets:
+    Photo.jpg: '1716016357719348227838781.47876'
     standard-page.html: CWMR4RXX2NJUETIKADQ4IBNYRKOU666G
     theme.css: C4546S5Y5MNYD3LYT3GNOW6M7FJLE3DO
   scripts: {}
