@@ -12,22 +12,14 @@ class Form1(Form1Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    my_message = "This text contains 'single quotes'"
-
-    my_othermessage = 'This text contains "double quotes"'
-
-    my_bigmessage = '''
-    This text 
-    contains multiple lines, 
-    as well as 'single quotes'
-    and "double quotes"
-    '''
-
-    # variables can also be assigned to numbers, and other types of data:
-
-    my_number = 48
-    alert(my_bigmessage)
+    
+     
     
    
 
     # Any code you write here will run before the form opens.
+
+  def text_box_1_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    my_message = 'You just clicked the button!'
+    alert(my_message)
