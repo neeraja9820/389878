@@ -1,5 +1,5 @@
 allow_embedding: false
-package_name: Material_Design_1
+package_name: live_web_cam_viewer
 db_schema:
   users:
     client: none
@@ -24,9 +24,9 @@ db_schema:
       admin_ui: {order: 5, width: 200}
       type: bool
     title: Users
-startup: null
-name: Material Design 1
-startup_form: Form1
+startup: {type: form, module: Flip}
+name: live web cam viewer
+startup_form: null
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 services:
