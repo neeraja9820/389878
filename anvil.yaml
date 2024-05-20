@@ -24,9 +24,9 @@ db_schema:
       admin_ui: {order: 5, width: 200}
       type: bool
     title: Users
-startup: {type: form, module: base}
+startup: null
 name: Material Design 1
-startup_form: null
+startup_form: Form1
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 services:
