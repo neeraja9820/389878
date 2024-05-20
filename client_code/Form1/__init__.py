@@ -21,5 +21,12 @@ class Form1(Form1Template):
 
   def text_box_1_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
-    my_message = 'You just clicked the button!'
-    alert(my_message)
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    my_message = self.text_box_1.text
+    alert("Hi" + my_message +"!") 
+    self.text_box_1.text = ''
+    self.text_box_1.focus()
+    
+    
