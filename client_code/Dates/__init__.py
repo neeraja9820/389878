@@ -21,10 +21,7 @@ class Dates(DatesTemplate):
     if self.date_picker_2.date is not None and self.date_picker_2.date is not None:
      self.label_1.text = self.date_picker_2.date - self.date_picker_1.date
 
-  def date_picker_2_change(self, **event_args):
-    """This method is called when the selected date changes"""
-    if self.date_picker_2.date is not None and self.date_picker_2.date is not None:
-     self.label_1.text = self.date_picker_2.date - self.date_picker_1.date
+  
 
 x = 7
 if x > 0 and x <= 5:
@@ -38,5 +35,5 @@ else:
 
 # here are 2 common short 1-line formats:
 
-if x == 6: print('x is 6')
+if x == 6 : print('x is 6')
 print('x is 6' if x == 6 else 'x is not 6')
